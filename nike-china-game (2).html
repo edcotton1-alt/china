@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🕹 Can You Fix Nike in China? — Inspiring Futures</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Serif+SC:wght@900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a12;--card:#141422;--card2:#1a1a2e;--nr:#ff3a3a;--np:#ff6b9d;--nc:#00f0ff;--ng:#39ff14;--ny:#ffe600;--no:#ff9500;--tx:#e0ddd4;--t2:#8a8890;--px:'Press Start 2P',monospace;--sn:'Source Sans 3',sans-serif}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:var(--sn);font-size:16px;line-height:1.7;overflow-x:hidden}
+body::after{content:'';position:fixed;top:0;left:0;right:0;bottom:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.03) 2px,rgba(0,0,0,.03) 4px);pointer-events:none;z-index:9999}
+.w{max-width:720px;margin:0 auto;padding:0 1.25rem 4rem}
+.hero{text-align:center;padding:3rem 1.5rem;position:relative}
+.hero-cn{font-family:'Noto Serif SC',serif;font-size:clamp(4rem,15vw,9rem);font-weight:900;color:var(--nr);opacity:.08;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+.hb{display:inline-block;font-family:var(--px);font-size:8px;color:var(--nc);border:1px solid var(--nc);padding:4px 10px;border-radius:2px;margin-bottom:1.5rem;letter-spacing:.1em;text-transform:uppercase}
+.hero h1{font-family:var(--px);font-size:clamp(14px,3.5vw,22px);line-height:1.8;color:var(--ny);text-shadow:0 0 20px rgba(255,230,0,.3);margin-bottom:1.5rem}
+.hero p{font-size:1rem;color:var(--t2);max-width:540px;margin:0 auto 1.5rem;line-height:1.8}
+.hs{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
+.hs>div{background:var(--card);border:1px solid #2a2a3e;border-radius:4px;padding:8px 14px;text-align:center}
+.hs-v{font-family:var(--px);font-size:12px;color:var(--nr);text-shadow:0 0 8px rgba(255,58,58,.4)}
+.hs-l{font-size:10px;color:var(--t2);margin-top:3px}
+.sbtn{font-family:var(--px);font-size:11px;background:var(--nr);color:#fff;border:none;padding:12px 28px;cursor:pointer;border-radius:3px;text-transform:uppercase;letter-spacing:.05em;transition:all .15s;box-shadow:0 0 20px rgba(255,58,58,.3),inset 0 -3px 0 rgba(0,0,0,.2)}
+.sbtn:hover{transform:translateY(-2px);box-shadow:0 0 30px rgba(255,58,58,.5),inset 0 -3px 0 rgba(0,0,0,.2)}
+.brief{background:var(--card);border:2px solid var(--nc);border-radius:6px;padding:1.25rem;margin:1.5rem auto;max-width:560px;text-align:left}
+.brief h3{font-family:var(--px);font-size:9px;color:var(--nc);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem}
+.brief li{font-size:.9rem;color:var(--t2);line-height:1.7;margin-bottom:.4rem;list-style:none;padding-left:1.2rem;position:relative}
+.brief li::before{content:'▸';position:absolute;left:0;color:var(--np)}
+.sb{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:1rem 0;position:sticky;top:0;z-index:50;background:var(--bg);padding:.75rem 0;border-bottom:2px solid #1a1a2e}
+.si{background:var(--card);border:1px solid #2a2a3e;border-radius:4px;padding:8px 4px;text-align:center}
+.sv{font-family:var(--px);font-size:clamp(9px,2vw,12px);transition:color .3s}
+.sl{font-size:8px;color:var(--t2);text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
+.sv.up{color:var(--ng);text-shadow:0 0 8px rgba(57,255,20,.4)}
+.sv.dn{color:var(--nr);text-shadow:0 0 8px rgba(255,58,58,.4)}
+.sv.fl{color:var(--ny)}
+.ph{display:none}.ph.on{display:block}
+.pt{font-family:var(--px);font-size:8px;color:var(--nc);text-transform:uppercase;letter-spacing:.12em;margin:2rem 0 .75rem;display:flex;align-items:center;gap:8px}
+.pt::before{content:'▸';color:var(--np)}
+.ph h2{font-family:var(--px);font-size:clamp(11px,2.5vw,15px);color:var(--ny);line-height:1.7;margin-bottom:.75rem;text-shadow:0 0 12px rgba(255,230,0,.2)}
+.pd{font-size:.95rem;color:var(--t2);line-height:1.8;margin-bottom:1.25rem}
+.dx{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:1.5rem}
+.dc{background:var(--card);border:1px solid #2a2a3e;border-radius:6px;padding:1rem}
+.ds{font-family:var(--px);font-size:clamp(10px,2vw,14px);margin-bottom:4px}
+.ds.bad{color:var(--nr)}.ds.ok{color:var(--no)}.ds.gd{color:var(--ng)}
+.dc h3{font-size:.85rem;font-weight:700;margin-bottom:4px}.dc p{font-size:.8rem;color:var(--t2);line-height:1.5;margin:0}
+.av{background:var(--card2);border:1px solid #2a2a3e;border-left:3px solid var(--nc);border-radius:0 6px 6px 0;padding:1rem 1.25rem;margin:1.25rem 0;display:flex;gap:12px}
+.aa{width:40px;height:40px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:var(--px);font-size:16px;border:2px solid}
+.aa.fk{background:#1a0a2e;border-color:var(--np);color:var(--np)}
+.aa.dw{background:#0a1a2e;border-color:var(--nc);color:var(--nc)}
+.aa.eh{background:#1a1a0a;border-color:var(--ny);color:var(--ny)}
+.ab{flex:1}
+.an{font-family:var(--px);font-size:7px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.an.pk{color:var(--np)}.an.cy{color:var(--nc)}.an.yl{color:var(--ny)}
+.av p{font-size:.9rem;color:var(--t2);line-height:1.7;margin:0}
+.og{display:grid;gap:8px;margin:1.25rem 0}
+.oc{background:var(--card);border:2px solid #2a2a3e;border-radius:6px;padding:1rem 1.25rem;cursor:pointer;transition:all .15s}
+.oc:hover{border-color:var(--nc);transform:translateX(4px)}
+.oc.pk{border-color:var(--ng);background:#0a1a0a;box-shadow:0 0 15px rgba(57,255,20,.1)}
+.oc h3{font-size:.95rem;font-weight:700;margin-bottom:3px}.oc p{font-size:.85rem;color:var(--t2);line-height:1.6;margin:0 0 8px}
+.tg{display:flex;gap:6px;flex-wrap:wrap}
+.tg span{font-family:var(--px);font-size:7px;padding:3px 8px;border-radius:2px;text-transform:uppercase;letter-spacing:.05em}
+.tc{background:#1a1a2e;color:var(--ny);border:1px solid rgba(255,230,0,.2)}
+.th2{background:#2e1a1a;color:var(--nr);border:1px solid rgba(255,58,58,.2)}
+.tm{background:#2e2a1a;color:var(--no);border:1px solid rgba(255,149,0,.2)}
+.tl{background:#1a2e1a;color:var(--ng);border:1px solid rgba(57,255,20,.2)}
+.rs{border-radius:6px;padding:1.25rem;margin:1rem 0;border-left:3px solid;animation:si .3s ease}
+@keyframes si{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.rs.w{background:#0a1a0a;border-color:var(--ng)}.rs.l{background:#1a0a0a;border-color:var(--nr)}.rs.m{background:#1a1a0a;border-color:var(--no)}
+.rs h3{font-family:var(--px);font-size:9px;text-transform:uppercase;margin-bottom:6px;letter-spacing:.05em}
+.rs.w h3{color:var(--ng)}.rs.l h3{color:var(--nr)}.rs.m h3{color:var(--no)}
+.rs p{font-size:.9rem;color:var(--t2);line-height:1.7;margin:0}
+.cp{background:var(--card);border:1px solid #2a2a3e;border-radius:6px;padding:.75rem 1rem;margin:.75rem 0}
+.cp h4{font-family:var(--px);font-size:7px;color:var(--np);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.cp p{font-size:.85rem;color:var(--t2);line-height:1.6;margin:0}
+.de{position:fixed;top:20%;left:50%;transform:translateX(-50%);font-family:var(--px);font-size:18px;pointer-events:none;z-index:100;animation:fu 1.2s ease forwards;opacity:0}
+@keyframes fu{0%{opacity:0;transform:translateX(-50%) translateY(0)}20%{opacity:1}80%{opacity:1}100%{opacity:0;transform:translateX(-50%) translateY(-60px)}}
+.nv{display:flex;justify-content:space-between;align-items:center;margin:2rem 0}
+.nb{font-family:var(--px);font-size:9px;padding:10px 18px;border:2px solid #2a2a3e;background:var(--card);color:var(--tx);cursor:pointer;border-radius:3px;text-transform:uppercase;transition:all .15s}
+.nb:hover{border-color:var(--nc);color:var(--nc)}
+.nb.go{background:var(--nr);border-color:var(--nr);color:#fff;box-shadow:0 0 12px rgba(255,58,58,.2)}
+.nb:disabled{opacity:.3;pointer-events:none}
+.dt{display:flex;gap:6px}
+.dd{width:12px;height:12px;border:2px solid #2a2a3e;border-radius:2px;transition:all .2s}
+.dd.dn2{background:var(--ng);border-color:var(--ng);box-shadow:0 0 6px rgba(57,255,20,.3)}
+.dd.nw{background:var(--ny);border-color:var(--ny);box-shadow:0 0 6px rgba(255,230,0,.3)}
+.dd.amb{background:var(--nr);border-color:var(--nr);box-shadow:0 0 6px rgba(255,58,58,.5);animation:pulse .6s ease infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 6px rgba(255,58,58,.5)}50%{box-shadow:0 0 16px rgba(255,58,58,.8)}}
+.br{background:linear-gradient(135deg,#0a0a1a,#1a0a2e);border:2px solid var(--nc);border-radius:8px;padding:1.5rem;margin:1.5rem 0;position:relative;overflow:hidden}
+.br::before{content:'Q';font-family:var(--px);font-size:5rem;position:absolute;right:.5rem;top:-.3rem;color:var(--nc);opacity:.06}
+.br h3{font-family:var(--px);font-size:10px;color:var(--nc);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem}
+.bm{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:.75rem}
+.bmi{text-align:center;padding:8px;background:rgba(0,240,255,.04);border-radius:4px;border:1px solid rgba(0,240,255,.1)}
+.bmi-v{font-family:var(--px);font-size:11px;margin-bottom:2px}
+.bmi-l{font-size:10px;color:var(--t2)}
+.bmi-d{font-size:9px;margin-top:2px}
+.bmi-d.pos{color:var(--ng)}.bmi-d.neg{color:var(--nr)}.bmi-d.fl2{color:var(--ny)}
+.bhl{background:var(--card);border:1px solid #2a2a3e;border-radius:4px;padding:10px;margin-top:8px}
+.bhl h4{font-family:var(--px);font-size:7px;color:var(--ny);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.bhl p{font-size:.85rem;color:var(--t2);line-height:1.6;margin:0}
+.amb-box{background:linear-gradient(135deg,#2e0a0a,#1a0a0a);border:2px solid var(--nr);border-radius:8px;padding:1.5rem;margin:1.5rem 0;animation:flash .3s ease 3}
+@keyframes flash{0%,100%{border-color:var(--nr)}50%{border-color:var(--ny)}}
+.amb-box h3{font-family:var(--px);font-size:10px;color:var(--nr);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem}
+.amb-box p{font-size:.9rem;color:var(--t2);line-height:1.7}
+.fn{text-align:center;padding:2rem 0}
+.fn-l{font-family:var(--px);font-size:8px;color:var(--nc);text-transform:uppercase;letter-spacing:.15em;margin-bottom:1rem}
+.fn-s{font-family:var(--px);font-size:clamp(28px,8vw,48px);margin:.5rem 0;animation:gl 2s ease-in-out infinite}
+@keyframes gl{0%,100%{text-shadow:0 0 10px currentColor}50%{text-shadow:0 0 30px currentColor,0 0 60px currentColor}}
+.fn-g{font-family:var(--px);font-size:9px;line-height:1.8;margin-bottom:2rem;color:var(--t2)}
+.fb{max-width:500px;margin:0 auto 2rem;text-align:left}
+.fr{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #1a1a2e}
+.fr-l{font-size:.85rem;min-width:120px;color:var(--t2)}
+.fr-b{flex:1;height:10px;background:#1a1a2e;border-radius:2px;overflow:hidden}
+.fr-f{height:100%;border-radius:2px;transition:width .6s}
+.fr-v{font-family:var(--px);font-size:8px;min-width:50px;text-align:right}
+.rc{background:linear-gradient(135deg,#1a1a0a,#0a0a12);border:2px solid var(--ny);border-radius:8px;padding:1.5rem;max-width:560px;margin:1.5rem auto;text-align:left;position:relative;overflow:hidden}
+.rc::before{content:'📋';font-size:2rem;position:absolute;top:.75rem;right:.75rem;opacity:.3}
+.rc h3{font-family:var(--px);font-size:10px;color:var(--ny);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem}
+.rc-item{padding:.5rem 0;border-bottom:1px solid rgba(255,230,0,.1)}
+.rc-item:last-child{border:none}
+.rc-cat{font-family:var(--px);font-size:7px;color:var(--t2);text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px}
+.rc-val{font-size:.95rem;font-weight:600}
+.rc-note{font-size:.8rem;color:var(--t2);margin-top:2px;line-height:1.5}
+.fw{background:var(--card);border:1px solid #2a2a3e;border-radius:6px;padding:1.25rem;max-width:560px;margin:1.5rem auto;text-align:left}
+@media(max-width:600px){.sb{grid-template-columns:repeat(3,1fr)}.dx{grid-template-columns:1fr}.bm{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="hero" id="hero">
+<div class="hero-cn">耐克</div>
+<div class="hb">Inspiring Futures × Arcade</div>
+<h1>CAN YOU FIX<br>NIKE IN CHINA?</h1>
+<p>It's October 1, 2026. You've just been hired as CMO of Nike Greater China. CEO Elliott Hill is watching. You have $200M, 7 rounds of decisions over 9 months, and one competitor ambush you won't see coming.</p>
+<div class="hs">
+<div><div class="hs-v">-17%</div><div class="hs-l">Revenue</div></div>
+<div><div class="hs-v">-36%</div><div class="hs-l">Digital</div></div>
+<div><div class="hs-v">$54</div><div class="hs-l">NKE Stock</div></div>
+<div><div class="hs-v">14.2%</div><div class="hs-l">Share</div></div>
+</div>
+<div class="brief">
+<h3>📋 Your briefing</h3>
+<ul>
+<li>You will make <strong>7 rounds of decisions</strong> between Oct 2026 and Jun 2027</li>
+<li>Each decision costs money from your <strong>$200M budget</strong> and moves your numbers</li>
+<li>After rounds 2 and 5, the <strong>board reviews your progress</strong> with financials and headlines</li>
+<li>At some point, a competitor will do something unexpected — you must <strong>react fast</strong></li>
+<li>You can <strong>go back and change any decision</strong> at any time to see different outcomes</li>
+<li>At the end, <strong>CEO Elliott Hill</strong> delivers your performance review: bonus, extension, or termination</li>
+</ul>
+</div>
+<button class="sbtn" onclick="startGame()">▶ INSERT COIN</button>
+</div>
+
+<div class="w" id="gw" style="display:none">
+<div class="sb" id="sboard">
+<div class="si"><div class="sv fl" id="zRev">$6.6B</div><div class="sl">Revenue</div></div>
+<div class="si"><div class="sv fl" id="zBud">$200M</div><div class="sl">Budget</div></div>
+<div class="si"><div class="sv fl" id="zShr">14.2%</div><div class="sl">Share</div></div>
+<div class="si"><div class="sv fl" id="zHt">42</div><div class="sl">🔥 Heat</div></div>
+<div class="si"><div class="sv fl" id="zStk">$54.20</div><div class="sl">NKE</div></div>
+</div>
+<div id="phs"></div>
+
+<!-- FINAL -->
+<div class="ph" id="pF">
+<div class="fn">
+<div class="fn-l">Game Over · Annual Review</div>
+<div class="fn-s" id="fSc"></div>
+<div class="fn-g" id="fGr"></div>
+</div>
+<div class="fb" id="fBd"></div>
+<div class="rc" id="reportCard">
+<h3>📋 Elliott Hill's Performance Review</h3>
+<div id="rcContent"></div>
+</div>
+<div class="fw">
+<div class="an pk" style="margin-bottom:6px">Falk Fuhrmann · Final word</div>
+<p style="font-size:.9rem;color:var(--t2);line-height:1.7;margin:0">People should develop a more balanced view on China. Brand building will have a revival — because in a hyper-competitive market, you have no choice when you want to differentiate. But you have to be in China to understand it.</p>
+</div>
+<div style="text-align:center;margin-top:1.5rem;display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+<button class="nb go" onclick="location.reload()">↺ PLAY AGAIN</button>
+<button class="nb" onclick="window.history.back()">← BACK TO EPISODE</button>
+</div>
+</div>
+</div>
+<script>
+const G={rev:6.6,bud:200,shr:14.2,ht:42,stk:54.20,d:{},ambushDone:false};
+const AMBUSH_AFTER=4;
+const R=[
+{id:1,tag:"Round 1 · Oct 2026 · Your Team",t:"WHO RUNS THE SHOW?",desc:"Nike China has been run from Portland. Icon Studio just launched in Shanghai but it's tiny. Anta's leadership is 100% Chinese, ships decisions in hours.",
+adv:{c:"fk",n:"Falk Fuhrmann",cl:"pk",txt:"You have to be in China to understand it. You have to live here and see behind the surface."},
+opts:[
+{id:"a",t:"Poach a CMO from Anta",desc:"Hire someone who's beaten you. They know the ecosystem, the speed. Huge signal. Huge culture risk.",cost:15,risk:2,rv:.3,sh:.4,ht:5,stk:3.2,w:1,title:"POWER MOVE",txt:"Your new CMO brings local networks and consumer intuition Portland never had. But she's already clashing with HQ over approval processes.",comp:"Anta CEO tweets: 'We wish our former colleague well.' Li-Ning launches 'Born in China' campaign."},
+{id:"b",t:"Give Icon Studio full autonomy",desc:"Promote your Shanghai team. They know Nike — let them run without Portland's permission chain.",cost:5,risk:0,rv:.1,sh:.1,ht:3,stk:0.5,w:0,title:"STEADY BUT SLOW",txt:"Better campaigns but the talent gap is real. Anta ships 3 collections before you ship 1.",comp:"No competitor response. You haven't scared anyone yet."},
+{id:"c",t:"Hire a creative director from Xiaomi",desc:"Go outside sportswear. Software-first thinking, ecosystem fluency, impossible speed. Wildcard.",cost:12,risk:2,rv:.2,sh:.3,ht:8,stk:4.1,w:1,title:"WILDCARD ACTIVATED",txt:"Your Xiaomi hire treats Nike like a tech product. First drop sells out in 4 hours on Douyin. Portland is confused. Numbers are up.",comp:"Li-Ning CEO: 'Nike is finally learning.' Anta starts recruiting from tech companies."}
+]},
+{id:2,tag:"Round 2 · Nov 2026 · Athletes",t:"WHO WEARS THE SWOOSH?",desc:"Eileen Gu can't carry the brand alone. Anta sponsors the entire Chinese Olympic team. You need names that matter to Chinese consumers now.",
+adv:{c:"dw",n:"Dan Wang",cl:"cy",txt:"Chinese athletes are winning globally, and domestic brands locked up most of them. Your athlete strategy needs to be as innovative as your product."},
+opts:[
+{id:"a",t:"Sign 10 rising Chinese athletes",desc:"CBA stars, marathon runners, badminton heroes, e-sports players. Local champions in tier-2/3 cities.",cost:40,risk:1,rv:.4,sh:.5,ht:6,stk:2.8,w:1,title:"CREDIBILITY REBUILT",txt:"Your CBA player drives Chengdu foot traffic. Marathon runner becomes the running club face in Hangzhou. E-sports signing goes viral on Bilibili.",comp:"Anta signs 3 athletes you were negotiating with — at higher fees. Li-Ning deepens its gymnastics heritage."},
+{id:"b",t:"Double down on LeBron & global stars",desc:"Nike's unique asset: the world's biggest athletes. No Chinese brand has this. Lean into global cool.",cost:60,risk:2,rv:-.1,sh:-.2,ht:2,stk:-5.5,w:-1,title:"NOSTALGIA DOESN'T SELL",txt:"LeBron posters go up. Foot traffic doesn't change. Weibo: 'My grandmother loves LeBron. I love Anta.' $60M on yesterday.",comp:"Anta doesn't respond. They don't need to."},
+{id:"c",t:"Build an athlete incubator",desc:"Fund 50 young Chinese athletes aged 16-22. Build the next generation from scratch. Long game.",cost:25,risk:1,rv:.1,sh:.2,ht:7,stk:1.0,w:0,title:"PLANTING SEEDS",txt:"Amazing content on Xiaohongshu. But results are 2-3 years away. One incubator athlete wins a viral tournament — Nike trends on Weibo.",comp:"Both competitors announce similar programs within 3 months."}
+]},
+{id:3,tag:"Round 3 · Jan 2027 · Digital",t:"WHERE DO YOU SELL?",desc:"Nike pushed DTC through its own app. Digital sales dropped 36%. 1.3 billion people live inside WeChat. Your app isn't in their world.",
+adv:{c:"fk",n:"Falk Fuhrmann",cl:"pk",txt:"Without WeChat I can't get a hospital appointment, pay at the grocery, or even pay at the rural vegetable market. Chinese culture is extremely convenience-driven."},
+opts:[
+{id:"a",t:"Build a WeChat super-mini-program",desc:"Full Nike experience inside WeChat: membership, shopping, running clubs, community. Embed in the ecosystem.",cost:30,risk:0,rv:.5,sh:.4,ht:4,stk:4.5,w:1,title:"SPEAKING THE LANGUAGE",txt:"Mini-program hits 8M users in 3 months. Running clubs go viral. WeChat commerce revenue grows 40%.",comp:"Anta's WeChat is already massive but your mini-program is better designed. Li-Ning copies your running club in 6 weeks."},
+{id:"b",t:"Go all-in on Douyin livestreams",desc:"Hire 20 creators, daily 4-hour streams. This is where Gen Z discovers and buys.",cost:20,risk:1,rv:.3,sh:.2,ht:5,stk:-1.2,w:0,title:"VIEWS UP · MARGINS DOWN",txt:"2M+ viewers per session. But format pressures discounts. Average selling price drops 15%. You're training consumers that Nike = deals.",comp:"Anta's livestreams are slicker — 3 years of practice. Li-Ning's founder does a personal stream: 50M views."},
+{id:"c",t:"Invest in the Nike app",desc:"Make it the best sportswear app in China. Exclusive drops, AI, Nike Training Club. Own the data.",cost:35,risk:2,rv:-.2,sh:-.3,ht:-2,stk:-6.8,w:-1,title:"YOU DIDN'T LISTEN",txt:"Chinese consumers don't want another app. Downloads are modest, engagement drops after 2 weeks. This is exactly the mistake Nike made before you.",comp:"Anta and Li-Ning don't notice. They're busy selling on the platforms you're ignoring."}
+]},
+{id:4,tag:"Round 4 · Mar 2027 · Product",t:"WHAT DO YOU MAKE?",desc:"Nike's product cycle: 12-18 months. Anta ships every 4-6 weeks. Designed for Chinese feet, weather, aesthetics. Nike's global designs feel generic.",
+adv:{c:"dw",n:"Dan Wang",cl:"cy",txt:"China's ecosystem is like a rising sea, softening many nuts at once. The US makes exquisite expensive solutions. Chinese companies iterate relentlessly at lower cost."},
+opts:[
+{id:"a",t:"China-exclusive lines at 90-day speed",desc:"Give Shanghai a blank slate. Design, develop, ship for Chinese consumers. Don't ask Portland.",cost:35,risk:1,rv:.5,sh:.5,ht:6,stk:5.2,w:1,title:"THE PRODUCT SPEAKS CHINESE",txt:"First China-exclusive runner: 800K pairs in 8 weeks. Asian fit, running KOLs, Tmall Day 1. Xiaohongshu: 'Finally, Nike made a shoe for us.'",comp:"Anta accelerates to 60-day cycles. Li-Ning has a competitor out in 5 weeks."},
+{id:"b",t:"Push global tech — Vaporfly, Air Max",desc:"Premium innovation Chinese brands can't match. Premium price justified by premium tech.",cost:20,risk:1,rv:.2,sh:.1,ht:3,stk:0.8,w:0,title:"NICHE RESPECT",txt:"Performance runners love it. But most Chinese buy sneakers for lifestyle. You've secured a niche while the mass market drifts.",comp:"Li-Ning launches a carbon racer at 40% of Vaporfly's price. Reviews: 90% as good."},
+{id:"c",t:"Collab with Chinese designers",desc:"Limited drops co-designed with calligraphers, streetwear collectives, artists. Drop culture meets Chinese creativity.",cost:15,risk:0,rv:.2,sh:.2,ht:9,stk:3.5,w:1,title:"CULTURALLY INTERESTING AGAIN",txt:"Shanghai streetwear collab: sells out in 11 minutes. Weibo trends 3 days. Resale 3x. But it's limited — mass business unchanged.",comp:"Li-Ning has been doing this for years. Anta launches a museum collab."}
+]},
+{id:5,tag:"Round 5 · Apr 2027 · Stores",t:"WHERE DO THEY FIND YOU?",desc:"Nike: ~7,000 doors, mostly tier-1. Anta: 12,000+, reaching tier-4. China's monobrand means you run your own stores. Your CEO admits you haven't invested enough.",
+adv:{c:"fk",n:"Falk Fuhrmann",cl:"pk",txt:"Living in Shanghai is like living in New York. You have no clue about the rest of China. Regional marketing is the next hot thing."},
+opts:[
+{id:"a",t:"Open 2,000 stores in tier-2/3 cities",desc:"Chengdu, Changsha, Kunming. Smaller format, regional mix. Go where Anta wins. Big spend.",cost:50,risk:2,rv:.6,sh:.7,ht:3,stk:4.0,w:1,title:"BOOTS ON THE GROUND",txt:"Chengdu and Wuhan exceed targets by 30%. You discover demand Portland never knew. Sichuan wants brighter colors, Dongbei wants warmer fabrics.",comp:"Anta accelerates to tier-5. Always one step ahead. Li-Ning opens a Chengdu mega-flagship."},
+{id:"b",t:"Transform flagships into experience temples",desc:"Shanghai, Beijing, Guangzhou flagships become immersive worlds. Fewer stores, way better.",cost:30,risk:1,rv:.2,sh:.1,ht:5,stk:1.5,w:0,title:"BEAUTIFUL BUT LIMITED",txt:"Shanghai flagship becomes a Xiaohongshu destination. But you've invested in 5 cities while Anta is in 600.",comp:"Anta opens a tech-forward flagship with WeChat checkout and 200 KOLs. Outsells yours month one."},
+{id:"c",t:"Partner with JD & Tmall",desc:"Let their logistics reach 600+ cities. Less control, much faster reach.",cost:15,risk:0,rv:.4,sh:.3,ht:2,stk:2.0,w:1,title:"SMART · LESS CONTROL",txt:"JD gives overnight access to 600 cities. Tmall smashes 618 festival. But you're one brand among thousands. Algorithms reward discounting.",comp:"Both competitors have massive platform presence already. You're late to their party."}
+]},
+{id:6,tag:"Round 6 · May 2027 · Campaign",t:"YOUR BIG CAMPAIGN MOMENT",desc:"618 shopping festival is coming — China's biggest mid-year sales event. Every brand goes big. You need a campaign that cuts through. This is your chance to redefine what Nike means here.",
+adv:{c:"dw",n:"Dan Wang",cl:"cy",txt:"Silicon Valley and the CCP are oddly similar: serious and humorless. The brands that win in China combine commercial ambition with genuine cultural fluency."},
+opts:[
+{id:"a",t:"'Move Your World' — community & wellness",desc:"Stop selling aspiration. Start selling belonging. Running clubs in 100 cities, mental health partnerships, WeChat community.",cost:25,risk:1,rv:.4,sh:.4,ht:8,stk:6.0,w:1,title:"PURPOSE > STATUS",txt:"Running clubs hit 500K members. Campaign featuring Hainan's 'surfer generation' goes massively viral. Nike feels emotionally relevant for the first time.",comp:"Anta tries community but feels forced. Li-Ning leans into nostalgia. You found white space."},
+{id:"b",t:"'Just Do It' revival — Chinese athletes",desc:"Back to basics. Performance, competition, excellence. All-Chinese cast. Premium justified by being the best.",cost:20,risk:1,rv:.2,sh:.2,ht:4,stk:1.0,w:0,title:"RESPECTFUL · PREDICTABLE",txt:"Well-executed but feels familiar. Weibo commenter: 'Just Do It? In this economy, I'm just surviving.'",comp:"Li-Ning counter-campaign 'Anything Is Possible' outperforms in engagement."},
+{id:"c",t:"Go silent. Let product speak.",desc:"No campaign for 618. Put everything into product and earned media. Let the shoes do the talking.",cost:5,risk:2,rv:-.1,sh:-.2,ht:-3,stk:-7.0,w:-1,title:"SILENCE = RETREAT",txt:"Chinese media interprets quiet as giving up. Competitors fill 618 void. Six months of silence in China's hyperactive market is an eternity.",comp:"Anta launches biggest 618 campaign ever. Li-Ning sponsors a music festival. Both gain share."}
+]},
+{id:7,tag:"Round 7 · Jun 2027 · Identity",t:"WHAT DOES NIKE MEAN HERE?",desc:"Final decision. Chinese consumers are losing the optimism that fuelled aspirational buying. Youth unemployment is 17%. 'Lying flat' is mainstream. You're selling $180 sneakers to a generation rethinking success.",
+adv:{c:"fk",n:"Falk Fuhrmann",cl:"pk",txt:"The biggest challenge is losing this optimism you always find in developing economies. They have to change how they consume, how they look for meaning in life."},
+opts:[
+{id:"a",t:"Reposition: from status to self-improvement",desc:"Nike isn't luxury — it's investment in yourself. Reframe premium as personal growth. Partner with education and wellness platforms.",cost:20,risk:1,rv:.3,sh:.3,ht:6,stk:3.5,w:1,title:"NEW MEANING FOUND",txt:"Repositioning resonates with young professionals who still want to succeed but reject flashy consumption. 'Invest in yourself' campaigns outperform expectations.",comp:"Neither competitor has this positioning. You've carved genuine white space in the market."},
+{id:"b",t:"Go affordable — launch Nike Essentials line",desc:"A China-only value tier. Great design, $40-60 price points. Meet the consumer where they are financially.",cost:30,risk:1,rv:.4,sh:.5,ht:-2,stk:-2.0,w:0,title:"VOLUME UP · BRAND DOWN",txt:"Nike Essentials sells well. But margins collapse and brand heat drops. You're now competing directly with Anta on their turf — price. That's a war you can't win.",comp:"Anta immediately undercuts your Essentials line by 20%. They have cost advantages you can't match."},
+{id:"c",t:"Exit strategy — retreat to premium niche",desc:"Accept that mass market is lost. Focus entirely on high-end performance and collect brand. Be the $200+ option for the top 5%.",cost:10,risk:2,rv:-.3,sh:-.4,ht:4,stk:-4.0,w:-1,title:"STRATEGIC RETREAT",txt:"Revenue contracts sharply. You're profitable per unit but shrinking fast. Wall Street calls it 'managed decline.' Your talent starts leaving for Anta.",comp:"Anta and Li-Ning celebrate publicly. One analyst note: 'Nike has conceded the China mass market.'"}
+]}
+];
+
+const AMBUSH={
+tag:"⚡ EMERGENCY · Apr 2027 · Competitor Ambush",
+t:"ANTA JUST BOUGHT SALOMON'S CHINA RIGHTS",
+desc:"You did not see this coming. Anta Group just announced exclusive China distribution rights for Salomon — the hottest outdoor brand globally. The deal gives Anta access to premium Western credibility AND their own distribution machine. Outdoor is the fastest-growing segment in Chinese sport. You have 48 hours to respond.",
+opts:[
+{id:"a",t:"Counter-acquire: buy On Running's China license",desc:"Fight fire with fire. On Running is hot and doesn't have strong China distribution yet. Expensive, but neutralizes the threat.",cost:40,risk:2,rv:.3,sh:.3,ht:5,stk:3.0,w:1,title:"COUNTERPUNCH LANDED",txt:"On Running deal closes fast. The brand's running credibility plus your distribution gives you a serious outdoor/performance play. But $40M just evaporated from your budget.",comp:"Anta's Salomon launch event gets 100M views on Douyin. But your On Running counter steals half the press coverage."},
+{id:"b",t:"Launch Nike ACG as a standalone brand in China",desc:"Nike already has All Conditions Gear. Elevate it to a standalone outdoor brand with its own stores, identity, and marketing. Use what you have.",cost:20,risk:1,rv:.2,sh:.2,ht:6,stk:2.0,w:1,title:"SMART PIVOT",txt:"ACG standalone stores open in Chengdu and Kunming — outdoor gateway cities. The brand has heritage and credibility. It's not as buzzy as Salomon but it's authentically Nike.",comp:"Anta's Salomon launch dominates the outdoor conversation for 3 months. But your ACG play gives you a permanent presence in the segment."},
+{id:"c",t:"Ignore it — stay focused on your plan",desc:"Don't get distracted by competitor moves. Your turnaround plan is working. Reacting to every threat is how brands lose focus.",cost:0,risk:1,rv:-.1,sh:-.2,ht:-1,stk:-2.5,w:-1,title:"DISCIPLINE OR DENIAL?",txt:"Your team respects the focus. But within 6 months, Anta+Salomon captures 8% of the outdoor segment you were barely in. The fastest-growing category in Chinese sport, and you sat it out.",comp:"Anta CEO in Financial Times: 'We're building the world's most complete sport portfolio.' Analysts start comparing Anta favorably to Nike globally."}
+]
+};
+
+function startGame(){document.getElementById('hero').style.display='none';document.getElementById('gw').style.display='block';buildAll();uSB();}
+
+function buildAll(){
+const c=document.getElementById('phs');let h='';
+R.forEach((p,idx)=>{
+h+=`<div class="ph${idx===0?' on':''}" id="p${p.id}">`;
+if(p.id===1){
+h+=`<div class="pt">Briefing · Know your battlefield</div><h2>THE DIAGNOSIS</h2><p class="pd">Before you spend a dollar — this is Nike China right now.</p>`;
+h+=`<div class="dx">`;
+h+=`<div class="dc"><div class="ds bad">-17%</div><h3>Revenue</h3><p>Six straight quarters. $1.73B last quarter.</p></div>`;
+h+=`<div class="dc"><div class="ds bad">-36%</div><h3>Digital</h3><p>Pushed own app in a WeChat market.</p></div>`;
+h+=`<div class="dc"><div class="ds ok">~7,000</div><h3>Stores</h3><p>Mostly tier-1. Anta: 12,000+ to tier-4.</p></div>`;
+h+=`<div class="dc"><div class="ds ok">Eileen Gu</div><h3>Key athlete</h3><p>One person vs Anta's entire Olympic team.</p></div>`;
+h+=`<div class="dc"><div class="ds bad">"Lifestyle brand<br>competing on price"</div><h3>CEO's words</h3><p>Elliott Hill. Lost performance identity.</p></div>`;
+h+=`<div class="dc"><div class="ds ok">Icon Studio</div><h3>Shanghai hub</h3><p>"Of China, for China." No impact yet.</p></div>`;
+h+=`</div>`;
+}
+h+=`<div class="pt">${p.tag}</div><h2>${p.t}</h2><p class="pd">${p.desc}</p>`;
+h+=`<div class="av"><div class="aa ${p.adv.c}">${p.adv.c==='fk'?'F':'D'}</div><div class="ab"><div class="an ${p.adv.cl}">${p.adv.n}</div><p>${p.adv.txt}</p></div></div>`;
+h+=`<div class="og" id="og${p.id}">`;
+p.opts.forEach(o=>{
+const rc=o.risk===2?'th2':o.risk===1?'tm':'tl';
+const rl=o.risk===2?'HIGH':o.risk===1?'MED':'LOW';
+h+=`<div class="oc" id="o${p.id}${o.id}" onclick="pick(${p.id},'${o.id}')"><h3>${o.t}</h3><p>${o.desc}</p><div class="tg"><span class="tc">$${o.cost}M</span><span class="${rc}">${rl} RISK</span></div></div>`;
+});
+h+=`</div><div id="rs${p.id}" style="display:none"></div>`;
+h+=`<div class="nv"><button class="nb" onclick="go(${p.id<=1?0:p.id-1})">◀ BACK</button><div class="dt">`;
+for(let i=1;i<=8;i++){h+=`<div class="dd" id="d${p.id}_${i}"></div>`;}
+h+=`</div><button class="nb go" id="nx${p.id}" onclick="advance(${p.id})" disabled>NEXT ▶</button></div></div>`;
+});
+// Ambush phase
+h+=`<div class="ph" id="pAmb">`;
+h+=`<div class="amb-box"><h3>⚡ COMPETITOR AMBUSH</h3><p>ALERT: Unexpected competitor move detected. You have 48 hours to respond.</p></div>`;
+h+=`<div class="pt">${AMBUSH.tag}</div><h2>${AMBUSH.t}</h2><p class="pd">${AMBUSH.desc}</p>`;
+h+=`<div class="og" id="ogAmb">`;
+AMBUSH.opts.forEach(o=>{
+const rc=o.risk===2?'th2':o.risk===1?'tm':'tl';
+const rl=o.risk===2?'HIGH':o.risk===1?'MED':'LOW';
+h+=`<div class="oc" id="oAmb${o.id}" onclick="pick('Amb','${o.id}')"><h3>${o.t}</h3><p>${o.desc}</p><div class="tg"><span class="tc">$${o.cost}M</span><span class="${rc}">${rl} RISK</span></div></div>`;
+});
+h+=`</div><div id="rsAmb" style="display:none"></div>`;
+h+=`<div class="nv"><button class="nb" onclick="go(${AMBUSH_AFTER})">◀ BACK</button><div class="dt">`;
+for(let i=1;i<=8;i++){h+=`<div class="dd" id="dAmb_${i}"></div>`;}
+h+=`</div><button class="nb go" id="nxAmb" onclick="go(${AMBUSH_AFTER+1})" disabled>NEXT ▶</button></div></div>`;
+c.innerHTML=h;
+}
+
+function getOpts(phase){return phase==='Amb'?AMBUSH.opts:R.find(x=>x.id===phase).opts;}
+
+function pick(phase,ch){
+const opts=getOpts(phase);
+const o=opts.find(x=>x.id===ch);
+if(G.bud<o.cost){showD('NOT ENOUGH ¥¥¥','var(--nr)');return;}
+opts.forEach(x=>{document.getElementById(`o${phase}${x.id}`).classList.remove('pk');});
+document.getElementById(`o${phase}${ch}`).classList.add('pk');
+if(G.d[phase]){const prev=opts.find(x=>x.id===G.d[phase]);G.bud+=prev.cost;G.rev-=prev.rv;G.shr-=prev.sh;G.ht-=prev.ht;G.stk-=prev.stk;}
+G.d[phase]=ch;G.bud-=o.cost;G.rev+=o.rv;G.shr+=o.sh;G.ht+=o.ht;G.stk+=o.stk;
+uSB();
+const cls=o.w===1?'w':o.w===-1?'l':'m';
+let rh=`<div class="rs ${cls}"><h3>${o.title}</h3><p>${o.txt}</p></div>`;
+rh+=`<div class="cp"><h4>⚔ Competitor Response</h4><p>${o.comp}</p></div>`;
+document.getElementById(`rs${phase}`).innerHTML=rh;
+document.getElementById(`rs${phase}`).style.display='block';
+document.getElementById(`nx${phase}`).disabled=false;
+const sym=o.w===1?'📈 +HEAT':o.w===-1?'📉 OUCH':'⚖️ MIXED';
+const col=o.w===1?'var(--ng)':o.w===-1?'var(--nr)':'var(--no)';
+showD(sym,col);
+}
+
+function showD(t,c){const d=document.createElement('div');d.className='de';d.style.color=c;d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),1300);}
+
+function uSB(){
+const e=(id,v,up)=>{const el=document.getElementById(id);el.textContent=v;el.className='sv '+(up>0?'up':up<0?'dn':'fl');};
+e('zRev','$'+G.rev.toFixed(1)+'B',G.rev-6.6);
+e('zBud','$'+G.bud+'M',G.bud>=100?0:G.bud<50?-1:0);
+e('zShr',G.shr.toFixed(1)+'%',G.shr-14.2);
+e('zHt',Math.round(G.ht),G.ht-42);
+e('zStk','$'+G.stk.toFixed(2),G.stk-54.20);
+}
+
+function advance(fromPhase){
+if(fromPhase===AMBUSH_AFTER && !G.ambushDone){G.ambushDone=true;go('Amb');return;}
+const nextId=fromPhase+1;
+if(nextId>7){go('F');return;}
+go(nextId);
+}
+
+function go(n){
+document.querySelectorAll('.ph').forEach(p=>p.classList.remove('on'));
+if(n==='F'){document.getElementById('pF').classList.add('on');showFinal();}
+else if(n==='Amb'){document.getElementById('pAmb').classList.add('on');showBoard('pAmb','Q2 2027 · APRIL',true);}
+else if(n===0){document.getElementById('p1').classList.add('on');}
+else{document.getElementById('p'+n).classList.add('on');if(n===3)showBoard('p'+n,'Q1 2027 · JANUARY');if(n===6)showBoard('p'+n,'Q3 2027 · MAY');}
+updateDots(n);
+window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function updateDots(current){
+const total=8;
+const phases=document.querySelectorAll('.ph');
+phases.forEach(ph=>{
+for(let i=1;i<=total;i++){
+const dot=ph.querySelector(`[id$="_${i}"]`);
+if(!dot)continue;
+dot.className='dd';
+const roundIds=[1,2,3,4,'Amb',5,6,7];
+if(i<=roundIds.length){
+const rid=roundIds[i-1];
+if(G.d[rid])dot.classList.add('dn2');
+if(rid===current)dot.classList.add('nw');
+if(rid==='Amb'&&current==='Amb')dot.classList.add('amb');
+}
+}
+});
+}
+
+function showBoard(targetId,qtr,isAmbush){
+const el=document.getElementById(targetId);
+if(el.querySelector('.br'))return;
+const rv=((G.rev-6.6)/6.6*100).toFixed(1);
+const sd=(G.stk-54.20).toFixed(2);
+const sh=(G.shr-14.2).toFixed(1);
+const mkCls=v=>parseFloat(v)>0?'pos':parseFloat(v)<0?'neg':'fl2';
+const mkCol=v=>parseFloat(v)>0?'var(--ng)':'var(--nr)';
+const headlines=[
+'Wall Street watching: analysts note Nike China moves but want quarterly proof.',
+'Anta Group reports record revenue. Stock hits all-time high.',
+'Bloomberg: "Nike turnaround faces longest road in company history."',
+'JP Morgan adjusts NKE price target based on China trajectory.',
+'Li-Ning announces international expansion — Chinese brands going West.',
+'Reuters: "Early signals from Nike China, but execution risk remains."',
+'CNBC: CEO Hill says turnaround "taking longer than I would like."'
+];
+const hl=headlines[Math.floor(Math.random()*headlines.length)];
+const board=document.createElement('div');
+board.className='br';
+board.innerHTML=`<h3>📊 Board Review · ${qtr}</h3>
+<div class="bm">
+<div class="bmi"><div class="bmi-v" style="color:${mkCol(rv)}">$${G.rev.toFixed(1)}B</div><div class="bmi-l">Revenue</div><div class="bmi-d ${mkCls(rv)}">${parseFloat(rv)>0?'+':''}${rv}%</div></div>
+<div class="bmi"><div class="bmi-v" style="color:${mkCol(sd)}">$${G.stk.toFixed(2)}</div><div class="bmi-l">NKE Stock</div><div class="bmi-d ${mkCls(sd)}">${parseFloat(sd)>0?'+$':'-$'}${Math.abs(parseFloat(sd)).toFixed(2)}</div></div>
+<div class="bmi"><div class="bmi-v" style="color:${mkCol(sh)}">${G.shr.toFixed(1)}%</div><div class="bmi-l">Share</div><div class="bmi-d ${mkCls(sh)}">${parseFloat(sh)>0?'+':''}${sh}pp</div></div>
+</div>
+<div class="bhl"><h4>📰 Headlines</h4><p>${hl}</p></div>`;
+const tag=el.querySelector('.pt');
+if(tag)tag.parentNode.insertBefore(board,tag);
+}
+
+function showFinal(){
+const rc=((G.rev-6.6)/6.6*100);
+const sc2=G.shr-14.2;
+const hc=G.ht-42;
+const stkc=((G.stk-54.20)/54.20*100);
+const score=Math.min(100,Math.max(0,Math.round(50+rc*2+sc2*3+hc*.4+stkc*.3)));
+const el=document.getElementById('fSc');
+el.textContent=score+'/100';
+el.style.color=score>=70?'var(--ng)':score>=40?'var(--ny)':'var(--nr)';
+const grades=[[80,"🏆 LEGENDARY"],[60,"✅ STRONG START"],[40,"⚠️ NEEDS WORK"],[0,"💀 GAME OVER"]];
+let g='';for(const x of grades){if(score>=x[0]){g=x[1];break;}}
+document.getElementById('fGr').textContent=g;
+const ms=[
+{l:'Revenue',v:G.rev,b:6.6,f:v=>'$'+v.toFixed(1)+'B'},
+{l:'Market share',v:G.shr,b:14.2,f:v=>v.toFixed(1)+'%'},
+{l:'Brand heat',v:G.ht,b:42,f:v=>Math.round(v)+''},
+{l:'NKE Stock',v:G.stk,b:54.20,f:v=>'$'+v.toFixed(2)},
+{l:'Budget left',v:G.bud,b:200,f:v=>'$'+v+'M'}
+];
+let bh='';ms.forEach(m=>{
+const pct=Math.min(100,Math.max(5,(m.v/m.b)*50+20));
+const col=m.v>=m.b?'var(--ng)':m.v>=m.b*.85?'var(--no)':'var(--nr)';
+bh+=`<div class="fr"><span class="fr-l">${m.l}</span><div class="fr-b"><div class="fr-f" style="width:${pct}%;background:${col}"></div></div><span class="fr-v" style="color:${col}">${m.f(m.v)}</span></div>`;
+});
+document.getElementById('fBd').innerHTML=bh;
+buildReportCard(score);
+}
+
+function buildReportCard(score){
+const c=document.getElementById('rcContent');
+let bonus,contract,tone,quote;
+if(score>=80){
+bonus='150%';contract='Extended 3 years';tone='var(--ng)';
+quote="You did what I wasn't sure was possible. You made Nike matter in China again. North America showed us what winning looks like — now you've shown us China can too. The work is not finished, but the direction is clear. I'm extending your contract and doubling your budget.";
+}else if(score>=60){
+bonus='80%';contract='Extended 1 year';tone='var(--ny)';
+quote="We're in the middle innings. You've made some bold calls and I respect that. The numbers are moving in the right direction but China remains our longest road. I'm keeping you on, but I need to see acceleration next quarter. Show me this isn't a false dawn.";
+}else if(score>=40){
+bonus='0%';contract='Under review';tone='var(--no)';
+quote="I'll be honest — this is taking longer than I would like. Some of your decisions showed you understand the market, others tell me you're still thinking like Portland. China continues to stand out as one of our most powerful long-term opportunities. But right now, I'm not sure you're the person to unlock it. You have one more quarter.";
+}else{
+bonus='-100%';contract='Terminated';tone='var(--nr)';
+quote="I gave you the resources, the autonomy, and the time. The results speak for themselves. We've become a lifestyle brand competing on price, and nothing you did changed that trajectory. I'm making a change in China leadership effective immediately. I wish you well.";
+}
+c.innerHTML=`
+<div class="av" style="margin:1rem 0;border-color:${tone}">
+<div class="aa eh">EH</div>
+<div class="ab">
+<div class="an yl">Elliott Hill · CEO, Nike Inc.</div>
+<p style="font-style:italic">"${quote}"</p>
+</div>
+</div>
+<div class="rc-item"><div class="rc-cat">Performance bonus</div><div class="rc-val" style="color:${tone}">${bonus}</div></div>
+<div class="rc-item"><div class="rc-cat">Contract status</div><div class="rc-val" style="color:${tone}">${contract}</div></div>
+<div class="rc-item"><div class="rc-cat">Revenue trajectory</div><div class="rc-val" style="color:${G.rev>6.6?'var(--ng)':'var(--nr)'}">$${G.rev.toFixed(1)}B ${G.rev>6.6?'↑':'↓'} from $6.6B</div><div class="rc-note">China contributed ${((G.rev/46)*100).toFixed(1)}% of global Nike revenue</div></div>
+<div class="rc-item"><div class="rc-cat">Stock impact</div><div class="rc-val" style="color:${G.stk>54.20?'var(--ng)':'var(--nr)'}">$${G.stk.toFixed(2)} ${G.stk>54.20?'↑':'↓'} from $54.20</div><div class="rc-note">${G.stk>54.20?'Your decisions contributed to share price recovery':'Investors remain skeptical of China turnaround'}</div></div>
+<div class="rc-item"><div class="rc-cat">Board assessment</div><div class="rc-val">${score>=60?'Confidence maintained':'Confidence eroding'}</div><div class="rc-note">${score>=60?'Board supports continued investment in China strategy':'Board considering strategic options including market de-prioritization'}</div></div>
+`;
+}
+</script>
+</body>
+</html>
